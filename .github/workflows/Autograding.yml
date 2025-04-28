@@ -1,0 +1,43 @@
+name: GitHub Classroom Workflow
+
+on:
+  push:
+    branches-ignore: []
+    paths-ignore: []
+  workflow_dispatch:
+
+env:
+  SOLUTION_FILE_PATH: .
+  BUILD_CONFIGURATION: Autograder
+  EXCLUDED_USERS: "AdrienBourgois,github-classroom[bot]"
+
+permissions:
+  checks: write
+  actions: read
+  contents: read
+
+jobs:
+  build:
+    name: Autograding
+    runs-on: windows-latest
+    if: ${{ !contains(github.event.inputs.EXCLUDED_USERS, github.actor) }}
+    steps:
+      - name: Clone Project
+        uses: actions/checkout@v4.2.2
+
+      - name: Log Workflow Actor
+        run: echo "Workflow executed by ${{ github.actor }}"
+
+      - name: Configure Visual Studio / MSBuild
+        uses: microsoft/setup-msbuild@v2
+        with:
+          msbuild-architecture: x64
+
+      - name: Compile
+        working-directory: ${{ github.workspace }}
+        run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:IncrementalBuild=true /p:DebugSymbols=false /verbosity:minimal ${{env.SOLUTION_FILE_PATH}}
+
+      - name: Run Autograding
+        uses: ./.github/actions/Autograder/
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

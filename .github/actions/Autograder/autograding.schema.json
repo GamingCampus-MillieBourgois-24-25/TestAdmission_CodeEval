@@ -1,0 +1,49 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "title": "Autograding Configuration",
+    "type": "object",
+    "properties": {
+      "exercises": {
+        "type": "array",
+        "description": "List of exercises to be graded",
+        "items": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "description": "Name of the exercise"
+            },
+            "tests": {
+              "type": "array",
+              "description": "List of tests for the exercise",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "Name of the test"
+                  },
+                  "input": {
+                    "type": "string",
+                    "description": "Input provided to the exercise"
+                  },
+                  "expected_output": {
+                    "type": "string",
+                    "description": "Expected output from the exercise"
+                  },
+                  "points": {
+                    "type": "integer",
+                    "description": "Points awarded for passing the test"
+                  }
+                },
+                "required": ["name", "points"]
+              }
+            }
+          },
+          "required": ["name", "tests"]
+        }
+      }
+    },
+    "required": ["exercises"]
+  }
+  

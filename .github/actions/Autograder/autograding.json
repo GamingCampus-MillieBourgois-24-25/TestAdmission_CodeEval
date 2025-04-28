@@ -1,0 +1,125 @@
+{
+  "$schema": "./autograding.schema.json",
+  "exercises": [
+    {
+      "name": "SmartPointerValidator",
+      "tests": [
+        {
+          "name": "Test Constructor and Destructor",
+          "input": "1",
+          "points": 1
+        },
+        {
+          "name": "Test Generic Display",
+          "input": "2",
+          "points": 1
+        },
+        {
+          "name": "Test Display Specialization for int",
+          "input": "3",
+          "points": 1
+        },
+        {
+          "name": "Test Display Specialization for std::string",
+          "input": "4",
+          "points": 1
+        },
+        {
+          "name": "Test Multiple SmartPointers",
+          "input": "5",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "name": "GameObjectValidator",
+      "tests": [
+        {
+          "name": "Test Create Component",
+          "input": "1",
+          "points": 1
+        },
+        {
+          "name": "Test Get Component",
+          "input": "2",
+          "points": 1
+        },
+        {
+          "name": "Test Has Component",
+          "input": "3",
+          "points": 1
+        },
+        {
+          "name": "Test Remove Component",
+          "input": "4",
+          "points": 1
+        },
+        {
+          "name": "Test Memory Management",
+          "input": "5",
+          "points": 1
+        }
+      ]
+    },
+	{
+      "name": "BankValidator",
+      "tests": [
+        {
+          "name": "Verify Account Creation and Removal",
+          "input": "1",
+          "points": 1
+        },
+        {
+          "name": "Validate Deposits",
+          "input": "2",
+          "points": 1
+        },
+        {
+          "name": "Check Withdrawals",
+          "input": "3",
+          "points": 1
+        },
+        {
+          "name": "Validate Transfers Between Accounts",
+          "input": "4",
+          "points": 1
+        },
+        {
+          "name": "Test Invalid Transfers",
+          "input": "5",
+          "points": 1
+        }
+      ]
+    },
+    {
+      "name": "LibraryValidator",
+      "tests": [
+        {
+          "name": "Test Adding and Removing Books",
+          "input": "1",
+          "points": 1
+        },
+        {
+          "name": "Test Borrowing and Returning Books",
+          "input": "2",
+          "points": 1
+        },
+        {
+          "name": "Test Searching Books by Title",
+          "input": "3",
+          "points": 1
+        },
+        {
+          "name": "Test Searching Books by Author",
+          "input": "4",
+          "points": 1
+        },
+        {
+          "name": "Test Handling Invalid Operations",
+          "input": "5",
+          "points": 1
+        }
+      ]
+    }
+  ]
+}

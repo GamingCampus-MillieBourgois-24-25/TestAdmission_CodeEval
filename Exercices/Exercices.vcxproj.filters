@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Autograder">
+      <UniqueIdentifier>{31c34f42-f0d7-4978-acb9-d207b5b19a2f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Autograder\ExerciseTest\ValidatorTest.cpp">
+      <Filter>Autograder</Filter>
+    </ClCompile>
+    <ClCompile Include="Autograder\AutograderMain.cpp">
+      <Filter>Autograder</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\GameObject\Component.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\GameObject\GameObject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Autograder\Validators\GameObject\GameObjectValidator.cpp">
+      <Filter>Autograder</Filter>
+    </ClCompile>
+    <ClCompile Include="Autograder\Validators\SmartPointer\SmartPointerValidator.cpp">
+      <Filter>Autograder</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Bank\Bank.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Library\Book.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Exercises\Library\Library.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Autograder\Validators\Bank\BankValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Autograder\Validators\Library\LibraryValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Autograder\ExerciseTest\ValidatorTest.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\ExerciseType\Exercise.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\ExerciseType\ExerciseBase.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\ExerciseTest\ExerciseTest.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\Helpers.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\TestRegistry.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\Core.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\SmartPointer\TemplateExemples.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\SmartPointer\SmartPointer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\GameObject\Component.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\GameObject\GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\Validators\GameObject\GameObjectValidator.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\Validators\SmartPointer\SmartPointerValidator.h">
+      <Filter>Autograder</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\SmartPointer\SmartPointer.inl">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Bank\Bank.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Library\Book.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Exercises\Library\Library.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\Validators\Bank\BankValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Autograder\Validators\Library\LibraryValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Exercises\GameObject\GameObject.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
