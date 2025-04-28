@@ -3,7 +3,7 @@ description: Executes .exe tests based on autograding.json and updates the GitHu
 author: Millie Bourgois
 runs:
   using: 'node20'
-  main: 'index.js'
+  main: 'dist/index.js'
 branding:
   icon: 'check-circle'
   color: 'blue'
